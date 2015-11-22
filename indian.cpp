@@ -134,8 +134,8 @@ void debug_print(string keyWord,map<int,adjList>database)
 
 }
 
-void IMPOSSIBLE(){
-        cout<<"Impossible to generate.\n";
+void IMPOSSIBLE(string input){
+        cout<<input<<" is impossible to generate.\n";
         exit(0);
 }
 
@@ -156,7 +156,7 @@ while(1)
 cin>>keyWord;
 
 if(input.size()<keyWord.length())
-    IMPOSSIBLE();
+    IMPOSSIBLE(keyWord);
 
 for(int pos=0;pos<keyWord.length();pos++)
 {
@@ -171,7 +171,7 @@ for(int pos=0;pos<keyWord.length();pos++)
 
 for(int pos=0;pos<keyWord.length();pos++)
 if(database[pos].list.size()==0)
-    IMPOSSIBLE();
+    IMPOSSIBLE(keyWord);
 
 //  debug_print(keyWord,database);
 
@@ -198,7 +198,7 @@ while(true)
 
   for(int pos=0;pos<keyWord.length();pos++)
     if(database[pos].checked==false)
-        IMPOSSIBLE();
+        IMPOSSIBLE(keyWord);
 
 
 
