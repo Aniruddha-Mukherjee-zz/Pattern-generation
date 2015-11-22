@@ -14,6 +14,8 @@ How to RUN    :   ./a.out <input.txt>out.txt
 
 
 1)SAMPLE INPUT :
+
+
 european
 indigo
 liar
@@ -25,6 +27,8 @@ keyword
 failure
 
 OUTPUT :
+
+
 Final Selection is:
 flower
 understand
